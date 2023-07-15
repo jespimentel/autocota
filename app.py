@@ -14,9 +14,6 @@ def criar_diretorio(diretorio):
 criar_diretorio('docx_gerados')
 criar_diretorio('pdfs_gerados')
 
-docx_folder = r'C:\Users\jepim\Desktop\autocota\docx_gerados'
-pdf_folder = r'C:\Users\jepim\Desktop\autocota\pdfs_gerados' 
-
 class DocumentProcessor:
     def __init__(self):
         self.data = datetime.now().strftime('%Y-%m-%d')
@@ -69,6 +66,8 @@ class PDFConverter:
         self.word = win32com.client.Dispatch('Word.Application')
        
     def convert_to_pdf(self):
+        docx_folder = os.path.join(os.getcwd(), 'docx_gerados')
+        pdf_folder = os.path.join(os.getcwd(), 'pdfs_gerados')
         for filename in os.listdir(docx_folder):
             if filename.endswith('.docx'):
                 docx_path = os.path.join(docx_folder, filename)
