@@ -9,7 +9,10 @@ O programa, escrito em Python, facilita o trabalho na Promotoria de Justiça, ge
 3. Edite o arquivo "cotas.txt" com o conteúdo das manifestações. 
 4. Rode a aplicação mais uma vez. Certifique-se de que possui no mesmo diretório um documento base ("documento_base.docx"), com campos XXXX (onde será inserido o número do processo) e YYYY (onde serão inseridos os parágrafos). A área do texto a ser preenchida já deve estar formatada com o estilo desejado. 
 5. Use a opção 2 para gerar os documentos docx e pdf automaticamente.
-6. Confira regularmente as atualizações do programa em <https://github.com/jespimentel/autocota>.
+
+### Dicas
+1. Confira regularmente as atualizações do programa em <https://github.com/jespimentel/autocota>.
+2. Veja o programa funcionando: <https://youtu.be/QOd2AeEOhgU> (em menos de 2 minutos).
 
 ### Por baixo do capô
 
